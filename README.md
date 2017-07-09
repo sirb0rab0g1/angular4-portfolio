@@ -1,5 +1,9 @@
 # Angular4PortfolioFueconcillo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+MORE LIKELY KASAGARAN SA AKONG DESIGN KAY BOOTSTRAP 
 
-ENJOY ! MGA JACKASS
+KAY I LOVE BOOTSTRAP KAYA 
+
+FEEL FREE TO DOWNLOAD PARA MA STUDIHAN ANG FLOW SA ANGULAR 4
+
+ENJOY JACKASS
