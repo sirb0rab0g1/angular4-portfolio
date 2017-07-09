@@ -1,0 +1,12 @@
+<div class="col-lg-12" *ngFor="let object of myObject">
+  <div style="margin-top:10px;">
+    <div style="float:left;" >
+      <div [ngClass]="fontSmallSize">{{object.name}}</div>
+      <div [ngClass]="fontExtraSmallSize">{{object.knowledge}}</div>
+    </div>
+    <span style="float:right;margin-top:12px;" [ngClass]="fontSmallSize" ><span class="badge badge-default" >{{object.value}}%</span>
+    </span>
+    <md-progress-bar class="example-margin" [color]="object.color" [mode]="object.mode" [value]="object.value" [bufferValue]="object.bufferValue">
+    </md-progress-bar>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<div style="margin-top:20px;">
+  <div class="row">
+    <div style="margin-top:20px;" class="col-lg-12">
+      <h4>Main Projects & My Role</h4>
+    </div>
+    <div class="col-lg-6" style="margin-top:10px;" *ngFor="let projects of myMainProjects">
+      <div class="card">
+        <div class="card-block">
+          <div class="card-title">
+            <a target="_blank" href="{{projects.link}}">{{projects.projectTitle}}</a>
+          </div>
+          <span [ngClass]="fontSmallSize" class="card-subtitle mb-4 text-muted">{{projects.role}}</span><br>
+          <div [ngClass]="fontSmallSize" class="badge badge-default">{{projects.language[0].html}}</div>
+          <div [ngClass]="fontSmallSize" class="badge badge-default">{{projects.language[0].css}}</div>
+          <div [ngClass]="fontSmallSize" class="badge badge-info">{{projects.language[0].boot}}</div>
+          <div [ngClass]="fontSmallSize" class="badge badge-warning">{{projects.language[0].angular}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;" class="col-lg-12">
+      <h4>Excercise Programs</h4>
+    </div>
+
+    <div class="col-lg-6" style="margin-top:10px;" *ngFor="let projects of myExercisesPrograms">
+      <div class="card">
+        <div class="card-block">
+          <div class="card-title">
+            <a target="_blank" href="{{projects.link}}">{{projects.projectTitle}}</a>
+          </div>
+          <span [ngClass]="fontSmallSize" class="card-subtitle mb-4 text-muted">{{projects.role}}</span><br>
+          <div [ngClass]="fontSmallSize" class="badge badge-default">{{projects.language[0].html}}</div>
+          <div [ngClass]="fontSmallSize" class="badge badge-default">{{projects.language[0].css}}</div>
+          <div [ngClass]="fontSmallSize" class="badge badge-info">{{projects.language[0].boot}}</div>
+          <div [ngClass]="fontSmallSize" class="badge badge-warning">{{projects.language[0].amaterial}}</div>
+          <div [ngClass]="fontSmallSize" class="badge badge-warning">{{projects.language[0].angular}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;" class="col-lg-12">
+      <h4>My Mentors</h4>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="list-group" style="margin-top:10px;">
+        <a href="https://www.facebook.com/{{master.fb}}" class="list-group-item list-group-item-action flex-column align-items-start"
+          *ngFor="let master of myMasters">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{master.title}}</h5>
+            <small>{{master.year}}</small>
+          </div>
+          <p class="mb-1">{{master.desc}}</p>
+          <small class="badge badge-{{master.btn}}">
+            <img class="rounded-circle" style="width:20px;height:20px;" src="{{master.img}}">
+            &nbsp;&nbsp;{{master.name}}&nbsp;&nbsp;
+          </small>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-12" style="margin-top:20px;">
+      <div class="card">
+        <div>
+          <img class="card-img-top " style="width:100%" src="https://s-media-cache-ak0.pinimg.com/originals/73/a2/0e/73a20e46766497cce6c45dce5c31a1bd.gif"
+            alt="Card image cap">
+        </div>
+        <div class="card-block">
+          <p class="text-center">{{name}}</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

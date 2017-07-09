@@ -1,0 +1,14 @@
+.font-size-small {
+  font-size: 10px;
+}
+
+.valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  padding: 15px;
+}
+
+.speacialties-title{
+  font-size:18px;
+}

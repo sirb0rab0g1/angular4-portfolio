@@ -1,0 +1,11 @@
+.valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  padding: 15px;
+}
+
+.material-icons-small-size {
+  font-size: 12px;
+}
+

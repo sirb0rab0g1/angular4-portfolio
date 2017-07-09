@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-lg-4 col-md-12">
+      <app-profileimage></app-profileimage>
+
+      <div class="card" style="margin-top:20px;">
+        <h6 class="card-header" [ngClass]="verticalAlign">
+          <i class="material-icons" [ngClass]="materialSmallIcon">code</i>&nbsp;&nbsp;
+          <span><strong>About </strong>Me</span>
+        </h6>
+        <div class="card-block">
+          <app-aboutme></app-aboutme>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px;">
+        <h6 class="card-header" [ngClass]="verticalAlign">
+          <i class="material-icons" [ngClass]="materialSmallIcon">build</i>&nbsp;
+          <span>My <strong>Specialties</strong></span>
+        </h6>
+        <div class="card-block">
+          <app-myspecialties></app-myspecialties>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:20px;">
+        <h6 class="card-header" [ngClass]="verticalAlign">
+          <i class="material-icons" [ngClass]="materialSmallIcon">mouse</i>&nbsp;
+          <span><strong>Skills</strong> & <strong>Abilities</strong></span>
+        </h6>
+        <div class="card-block">
+          <app-skillsandabilities></app-skillsandabilities>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-12">
+      <div style="margin-top:20px;">
+        <ngb-tabset #t="ngbTabset">
+          <ngb-tab id="tab-selectbyid1">
+            <ng-template ngbTabTitle>
+              <span [ngClass]="materialSmallIcon">
+                Projects &nbsp;&nbsp;
+              </span>
+              <span class="badge badge-default">{{value}}</span>
+            </ng-template>
+            <ng-template ngbTabContent>
+              <app-projects></app-projects>
+            </ng-template>
+          </ngb-tab>
+        </ngb-tabset>
+      </div>
+    </div>
+
+  </div>
+</div>
