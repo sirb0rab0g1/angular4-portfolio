@@ -24,7 +24,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 90,
-      bufferValue: 75
+      bufferValue: 90
     },
     { 
       name:'JavaScript',
@@ -32,7 +32,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 90,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'Css',
@@ -40,7 +40,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 75,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'Bootstrap',
@@ -48,7 +48,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 85,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'AngularJS 1 ',
@@ -56,23 +56,23 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 90,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'AngularJS 2',
       knowledge: 'KNOWLEDGE ABOUT ANGULARJS 2',
       color: 'primary',
       mode: 'buffer',
-      value: 80,
-      bufferValue: 75
+      value: 84,
+      bufferValue: 90
     },
     {
       name:'AngularJS 4',
       knowledge: 'KNOWLEDGE ABOUT ANGULARJS 4',
       color: 'primary',
       mode: 'buffer',
-      value: 80,
-      bufferValue: 75
+      value: 84,
+      bufferValue: 90
     },
     {
       name:'PHP',
@@ -80,7 +80,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 90,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'Wordpress',
@@ -88,7 +88,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 10,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'Python',
@@ -96,7 +96,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 30,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'Django',
@@ -104,7 +104,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 5,
-      bufferValue: 75
+      bufferValue: 90
     },
     {
       name:'Git',
@@ -112,7 +112,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 75,
-      bufferValue: 75
+      bufferValue: 90
     }
   ];
 }
