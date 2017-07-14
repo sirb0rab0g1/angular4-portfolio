@@ -102,6 +102,15 @@ export class ProjectsComponent implements OnInit {
       fb:'lryuk92'
     },
     {
+      title: 'Wordpress + VVV',
+      desc: 'He gives his ideas towards wordpress basics',
+      name: 'Guy Romelle Magayno ',
+      year: '2017',
+      btn: 'default',
+      img:'https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/14372429_10206710453793056_6489077557797500514_o.jpg?oh=585c415fbf2a9d0c0bcab02c76b8357c&oe=5A11CEF8',
+      fb:'mguyromelle'
+    },
+    {
       title: 'AngularJS',
       desc: 'He taught me everything including the basic and advance learning regarding the framework called ANGULARJS',
       name: 'Daniel Padilla',

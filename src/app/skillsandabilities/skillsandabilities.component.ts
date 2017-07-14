@@ -83,6 +83,30 @@ export class SkillsandabilitiesComponent implements OnInit {
       bufferValue: 75
     },
     {
+      name:'Wordpress',
+      knowledge: 'KNOWLEDGE  ABOUT WORDPRESS',
+      color: 'primary',
+      mode: 'buffer',
+      value: 10,
+      bufferValue: 75
+    },
+    {
+      name:'Python',
+      knowledge: 'KNOWLEDGE  ABOUT PYTHON',
+      color: 'primary',
+      mode: 'buffer',
+      value: 30,
+      bufferValue: 75
+    },
+    {
+      name:'Django',
+      knowledge: 'KNOWLEDGE  ABOUT DJANGO',
+      color: 'primary',
+      mode: 'buffer',
+      value: 5,
+      bufferValue: 75
+    },
+    {
       name:'Git',
       knowledge: 'KNOWLEDGE ABOUT GIT',
       color: 'primary',
