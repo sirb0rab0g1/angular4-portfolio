@@ -19,5 +19,5 @@ export class BodyComponent implements OnInit {
   //functions
   public isCollapsed = false;
 
-  value = '1';
+  value = '2';
 }

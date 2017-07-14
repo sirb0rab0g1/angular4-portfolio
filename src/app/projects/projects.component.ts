@@ -34,6 +34,17 @@ export class ProjectsComponent implements OnInit {
           angular: 'AngularJS'
         }
       ]
+    },
+    {
+
+      projectTitle: 'Mrs. Spanglish',
+      role: 'Web Developer',
+      link: 'http://infosoftstudio.com/mrsspanglish/',
+      language: [
+        {
+          html: 'Wordpress',
+        }
+      ]
     }
   ]
 
