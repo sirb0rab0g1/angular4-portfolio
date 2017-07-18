@@ -86,7 +86,7 @@ export class ProjectsComponent implements OnInit {
           html: 'HTML',
           css: 'CSS',
           boot: 'Bootstrap 4',
-          amaterial: 'Angular 2 Material Design',
+          amaterial: 'Angular 4 Material Design',
           angular: 'AngularJS 4'
         }
       ]

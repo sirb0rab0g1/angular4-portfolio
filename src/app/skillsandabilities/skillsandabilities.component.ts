@@ -43,11 +43,27 @@ export class SkillsandabilitiesComponent implements OnInit {
       bufferValue: 90
     },
     {
-      name:'Bootstrap',
+      name:'SASS',
+      knowledge: 'KNOWLEDGE ABOUT SASS',
+      color: 'primary',
+      mode: 'buffer',
+      value: 75,
+      bufferValue: 90
+    },
+    {
+      name:'Bootstrap 3',
       knowledge: 'KNOWLEDGE ABOUT BOOTSTRAP',
       color: 'primary',
       mode: 'buffer',
       value: 85,
+      bufferValue: 90
+    },
+    {
+      name:'Bootstrap 4',
+      knowledge: 'KNOWLEDGE ABOUT BOOTSTRAP',
+      color: 'primary',
+      mode: 'buffer',
+      value: 80,
       bufferValue: 90
     },
     {
@@ -104,6 +120,14 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 5,
+      bufferValue: 90
+    },
+    {
+      name:'Ruby',
+      knowledge: 'KNOWLEDGE  ABOUT RUBY',
+      color: 'primary',
+      mode: 'buffer',
+      value: 15,
       bufferValue: 90
     },
     {
