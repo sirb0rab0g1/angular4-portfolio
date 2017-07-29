@@ -90,6 +90,21 @@ export class ProjectsComponent implements OnInit {
           angular: 'AngularJS 4'
         }
       ]
+    },
+    {
+      projectTitle: 'AngularJS4 + Material Design + Prime Faces',
+      role: 'Front End Web Developer',
+      link: 'https://sirb0rab0g1.github.io/angularjs4-word-online/',
+      language: [
+        {
+          html: 'HTML',
+          css: 'CSS',
+          boot: 'Bootstrap 4',
+          amaterial: 'Angular 4 Material Design',
+          angular: 'AngularJS 4',
+          prime: 'Prime Faces'
+        }
+      ]
     }
   ]
 
