@@ -64,7 +64,7 @@ var AboutmeComponent = (function () {
     return AboutmeComponent;
 }());
 AboutmeComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-aboutme',
         template: __webpack_require__("../../../../../src/app/aboutme/aboutme.component.html"),
         styles: [__webpack_require__("../../../../../src/app/aboutme/aboutme.component.css")]
@@ -97,7 +97,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <app-body></app-body>\n</div>\n"
+module.exports = "<div>\n  <app-body></app-body>\n\n  <push-notification #notification [title]=\"name\" [body]=\"content\" \n    [icon]=\"icon\"\n    (load)=\"notification.show()\" closeDelay=\"7000\">\n  </push-notification>\n  \n</div>\n"
 
 /***/ }),
 
@@ -116,12 +116,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app';
+        this.name = "Kent Fueconcillo";
+        this.content = "Hi there! How may i help you ? Free free to talk with me !";
+        this.icon = "https://scontent.fceb1-1.fna.fbcdn.net/v/t1.0-9/19961222_1740052446022448_1520076539138365916_n.jpg?oh=213e3372ea9a6687f80fa07822fb3059&oe=59F36FB0";
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -145,12 +147,15 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__myspecialties_myspecialties_component__ = __webpack_require__("../../../../../src/app/myspecialties/myspecialties.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__skillsandabilities_skillsandabilities_component__ = __webpack_require__("../../../../../src/app/skillsandabilities/skillsandabilities.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__projects_projects_component__ = __webpack_require__("../../../../../src/app/projects/projects.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap_dropdown__ = __webpack_require__("../../../../ngx-bootstrap/dropdown/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_hammerjs__ = __webpack_require__("../../../../hammerjs/hammer.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_hammerjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ng_notification_ng_notification_directive__ = __webpack_require__("../../../../../src/app/directives/ng-notification/ng-notification.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ngx_bootstrap_dropdown__ = __webpack_require__("../../../../ngx-bootstrap/dropdown/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_hammerjs__ = __webpack_require__("../../../../hammerjs/hammer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_hammerjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_notifications_ng2_notifications__ = __webpack_require__("../../../../ng2-notifications/ng2-notifications.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_notifications_ng2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_ng2_notifications_ng2_notifications__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -161,11 +166,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+//component
 
 
 
 
 
+
+//directives
+
+//libraries
 
 
 
@@ -182,7 +192,7 @@ var AppModule = (function () {
     return AppModule;
 }());
 AppModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_4__body_body_component__["a" /* BodyComponent */],
@@ -191,17 +201,19 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_7__skillsandabilities_skillsandabilities_component__["a" /* SkillsandabilitiesComponent */],
             __WEBPACK_IMPORTED_MODULE_3__profileimage_profileimage_component__["a" /* ProfileimageComponent */],
             __WEBPACK_IMPORTED_MODULE_8__projects_projects_component__["a" /* ProjectsComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__directives_ng_notification_ng_notification_directive__["a" /* NgNotificationDirective */],
+            __WEBPACK_IMPORTED_MODULE_14_ng2_notifications_ng2_notifications__["PushNotificationComponent"]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap_dropdown__["a" /* BsDropdownModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_11__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_material__["a" /* MdButtonModule */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_material__["b" /* MdCardModule */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_material__["c" /* MdTabsModule */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_material__["d" /* MdSliderModule */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_material__["e" /* MdProgressBarModule */],
+            __WEBPACK_IMPORTED_MODULE_10_ngx_bootstrap_dropdown__["a" /* BsDropdownModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_11__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_material__["a" /* MdButtonModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_material__["b" /* MdCardModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_material__["c" /* MdTabsModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_material__["d" /* MdSliderModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_material__["e" /* MdProgressBarModule */],
         ],
         providers: [],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -267,7 +279,7 @@ var BodyComponent = (function () {
     return BodyComponent;
 }());
 BodyComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-body',
         template: __webpack_require__("../../../../../src/app/body/body.component.html"),
         styles: [__webpack_require__("../../../../../src/app/body/body.component.css")]
@@ -276,6 +288,38 @@ BodyComponent = __decorate([
 ], BodyComponent);
 
 //# sourceMappingURL=body.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/directives/ng-notification/ng-notification.directive.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgNotificationDirective; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var NgNotificationDirective = (function () {
+    function NgNotificationDirective() {
+    }
+    return NgNotificationDirective;
+}());
+NgNotificationDirective = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        selector: '[appNgNotification]'
+    }),
+    __metadata("design:paramtypes", [])
+], NgNotificationDirective);
+
+//# sourceMappingURL=ng-notification.directive.js.map
 
 /***/ }),
 
@@ -332,7 +376,7 @@ var MyspecialtiesComponent = (function () {
     return MyspecialtiesComponent;
 }());
 MyspecialtiesComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-myspecialties',
         template: __webpack_require__("../../../../../src/app/myspecialties/myspecialties.component.html"),
         styles: [__webpack_require__("../../../../../src/app/myspecialties/myspecialties.component.css")]
@@ -395,7 +439,7 @@ var ProfileimageComponent = (function () {
     return ProfileimageComponent;
 }());
 ProfileimageComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-profileimage',
         template: __webpack_require__("../../../../../src/app/profileimage/profileimage.component.html"),
         styles: [__webpack_require__("../../../../../src/app/profileimage/profileimage.component.css")]
@@ -591,7 +635,7 @@ var ProjectsComponent = (function () {
     return ProjectsComponent;
 }());
 ProjectsComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-projects',
         template: __webpack_require__("../../../../../src/app/projects/projects.component.html"),
         styles: [__webpack_require__("../../../../../src/app/projects/projects.component.css")]
@@ -778,7 +822,7 @@ var SkillsandabilitiesComponent = (function () {
     return SkillsandabilitiesComponent;
 }());
 SkillsandabilitiesComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-skillsandabilities',
         template: __webpack_require__("../../../../../src/app/skillsandabilities/skillsandabilities.component.html"),
         styles: [__webpack_require__("../../../../../src/app/skillsandabilities/skillsandabilities.component.css")]
@@ -816,7 +860,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
