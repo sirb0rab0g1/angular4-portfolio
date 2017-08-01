@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+//component
 import { ProfileimageComponent } from './profileimage/profileimage.component';
 import { BodyComponent } from './body/body.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
@@ -10,16 +11,22 @@ import { MyspecialtiesComponent } from './myspecialties/myspecialties.component'
 import { SkillsandabilitiesComponent } from './skillsandabilities/skillsandabilities.component';
 import { ProjectsComponent } from './projects/projects.component';
 
+//directives
+import { NgNotificationDirective } from './directives/ng-notification/ng-notification.directive';
+
+//libraries
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
+import { PushNotificationComponent } from 'ng2-notifications/ng2-notifications';
 
 import { MdButtonModule } from '@angular/material';
 import { MdCardModule } from '@angular/material';
 import { MdTabsModule } from '@angular/material';
 import { MdSliderModule } from '@angular/material';
 import { MdProgressBarModule } from '@angular/material';
+
 
 
 @NgModule({
@@ -31,6 +38,8 @@ import { MdProgressBarModule } from '@angular/material';
     SkillsandabilitiesComponent,
     ProfileimageComponent,
     ProjectsComponent,
+    NgNotificationDirective,
+    PushNotificationComponent
   ],
   imports: [
     BrowserModule,

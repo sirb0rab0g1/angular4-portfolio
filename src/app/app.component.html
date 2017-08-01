@@ -1,3 +1,9 @@
 <div>
   <app-body></app-body>
+
+  <push-notification #notification [title]="name" [body]="content" 
+    [icon]="icon"
+    (load)="notification.show()" closeDelay="7000">
+  </push-notification>
+  
 </div>
