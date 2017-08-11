@@ -104,6 +104,19 @@ export class ProjectsComponent implements OnInit {
           prime: 'Prime Faces'
         }
       ]
+    },
+    {
+      projectTitle: 'AngularJS 4 Firebase',
+      role: 'Front End Web Developer',
+      link: 'https://fir-angular-47dce.firebaseapp.com/',
+      language: [
+        {
+          html: 'HTML',
+          css: 'CSS',
+          angular: 'AngularJS 4',
+          prime: 'FIrebase'
+        }
+      ]
     }
   ]
 

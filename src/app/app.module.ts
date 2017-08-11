@@ -21,13 +21,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { PushNotificationComponent } from 'ng2-notifications/ng2-notifications';
 
-import { MdButtonModule } from '@angular/material';
-import { MdCardModule } from '@angular/material';
-import { MdTabsModule } from '@angular/material';
-import { MdSliderModule } from '@angular/material';
-import { MdProgressBarModule } from '@angular/material';
-
-
+//angular-material
+import {
+  MdButtonModule,
+  MdCardModule,
+  MdTabsModule,
+  MdSliderModule,
+  MdProgressBarModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MdProgressBarModule } from '@angular/material';
     ProjectsComponent,
     NgNotificationDirective,
     PushNotificationComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -51,9 +53,10 @@ import { MdProgressBarModule } from '@angular/material';
     MdTabsModule,
     MdSliderModule,
     MdProgressBarModule,
+  ],
+  providers: [
     
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
