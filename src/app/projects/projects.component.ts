@@ -117,7 +117,21 @@ export class ProjectsComponent implements OnInit {
           prime: 'FIrebase'
         }
       ]
-    }
+    },{
+      projectTitle: 'AngularJS 4 Tutorial',
+      role: 'Founder',
+      link: 'https://sirb0rab0g1.github.io/angularjs4-tutorial/#/',
+      language: [
+        {
+          html: 'HTML',
+          css: 'CSS',
+          angular: 'AngularJS 4',
+          amaterial:'Angular 4 Material Design',
+          prime: 'Prime'
+        }
+      ]
+    },
+
   ]
 
   myMasters = [
