@@ -406,7 +406,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/profileimage/profileimage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngClass]=\"imageContainer\">\n  <img class=\"rounded-circle\" draggable=\"false\" src=\"https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.0-9/19884116_1734168823277477_7782289430895912866_n.jpg?oh=340a72068ff4798d8accd96d7157b0ea&oe=59C50008\"\n    style=\"max-width:100%;max-height:100%;\">\n</div>\n"
+module.exports = "<div [ngClass]=\"imageContainer\">\n  <img class=\"rounded-circle\" draggable=\"false\" src=\"https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.0-9/19884116_1734168823277477_7782289430895912866_n.jpg?oh=340a72068ff4798d8accd96d7157b0ea&oe=59C50008\"\n    style=\"max-width:100%;max-height:100%;\">\n\n  \n</div>\n"
 
 /***/ }),
 
@@ -590,7 +590,20 @@ var ProjectsComponent = (function () {
                         prime: 'FIrebase'
                     }
                 ]
-            }
+            }, {
+                projectTitle: 'AngularJS 4 Tutorial',
+                role: 'Founder',
+                link: 'https://sirb0rab0g1.github.io/angularjs4-tutorial/#/',
+                language: [
+                    {
+                        html: 'HTML',
+                        css: 'CSS',
+                        angular: 'AngularJS 4',
+                        amaterial: 'Angular 4 Material Design',
+                        prime: 'Prime'
+                    }
+                ]
+            },
         ];
         this.myMasters = [
             {
