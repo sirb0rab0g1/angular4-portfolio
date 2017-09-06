@@ -120,7 +120,7 @@ export class ProjectsComponent implements OnInit {
     },{
       projectTitle: 'Django Rest Tutorial',
       role: 'Back End Developer',
-      link: 'https://my-rest-api-postgre.herokuapp.com/info/personal/',
+      link: 'https://my-rest-api-postgre.herokuapp.com',
       language: [
         {
           html: 'Django Rest Api'
