@@ -406,7 +406,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/profileimage/profileimage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngClass]=\"imageContainer\">\n  <img class=\"rounded-circle\" draggable=\"false\" src=\"../assets/images/19884116_1734168823277477_7782289430895912866_n.jpg\"\n    style=\"max-width:100%;max-height:100%;\">\n\n  \n</div>\n"
+module.exports = "<div [ngClass]=\"imageContainer\">\n  <img class=\"rounded-circle\" draggable=\"false\" src=\"assets/images/19884116_1734168823277477_7782289430895912866_n.jpg\"\n    style=\"max-width:100%;max-height:100%;\">\n\n  \n</div>\n"
 
 /***/ }),
 
