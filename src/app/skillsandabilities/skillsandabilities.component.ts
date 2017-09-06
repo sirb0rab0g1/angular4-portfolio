@@ -121,6 +121,13 @@ export class SkillsandabilitiesComponent implements OnInit {
       mode: 'buffer',
       value: 5,
       bufferValue: 90
+    },{
+      name:'Django Rest Api',
+      knowledge: 'KNOWLEDGE  ABOUT DJANGO REST',
+      color: 'primary',
+      mode: 'buffer',
+      value: 60,
+      bufferValue: 90
     },
     {
       name:'Ruby',
