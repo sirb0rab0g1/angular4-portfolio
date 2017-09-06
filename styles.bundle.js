@@ -1,5 +1,12 @@
 webpackJsonp([2],{
 
+/***/ "../../../../../src/assets/images/grid.png":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAEyCAYAAAB6eMeBAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPgogICAgICAgICA8ZGM6c3ViamVjdD4KICAgICAgICAgICAgPHJkZjpCYWcvPgogICAgICAgICA8L2RjOnN1YmplY3Q+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgrlPw1BAAAD6klEQVR4nO3dwXIbVRBA0R4DgaLg/z8UNkDCY5FSwcKJjDW+PA/nrF0d5Wb8LE1b0TEzP8/M78Ob+nZmZq3126ODjuP43pwve3p0AC8jdEToiNARoSNCR4SOCB0ROiJ0ROiI0BGhI0JHhI4IHTnGhiVhwxLNcXREhI4IHRE6InRE6IjQEaEjQkeEjggdEToidEToiNARoSO3DQtv7LZh+eXRQbttNHab4+iICB0ROiJ0ROiI0BGhI0JHhI4IHRE6InRE6IjQEaEjQke8hyXiPSzRHEdHROiI0BGhI0JHhI4IHRE6InRE6IjQEaEjQkeEjggdETpiwxKxYYnmODoiQkeEjggdEToidEToiNARoSNCR4SOCB0ROiJ0ROiI0BEblogNSzTH0REROiJ0ROiI0BGhI0JHhI4IHRE6InRE6IjQEaEjQkeEjtiwRGxYojmOjojQEaEjQkeEjggdEToidEToiNARoSNCR4SOCB0ROiJ0xCfdR3zSfTTH0REROiJ0ROiI0BGhI0JHhI4IHRE6InRE6IjQEaEjQkeEjngPS8R7WKI5jo6I0BGhI0JHhI4IHRE6InRE6IjQEaEjQkeEjggdEToidMSGJWLDEs1xdESEjggdEToidEToiNARoSNCR4SOCB0ROiJ0ROiI0BGhIzYsERuWaI6jIyJ0ROiI0BGhI0JHhI4IHRE6InRE6IjQEaEjQkeEjggdsWGJ2LBEc658dKz/+gH809Ns9oDmvMdznDTnFK7oyJVDb+XM0FtdQSc65e/lio4IHRE6InRE6IjQEaEjQkeEjggdETpyzMxPL/i6q97HeAvP3p69bVh+fXj6cXxYaz28ErvqHEdHZMcNyyW5oiNCR4SOCB3ZMfRZP5y3+iG/Y+hLEjri1w3u8+sG74nQEaEjQkeEjrh7Fzlm5seZ+TiCv6nbhuWMTcR3a60/zHnejme0ex28ntARoSNC37fdTaWtfvjsxhUd8cow4oqOCB3ZMbRXhrye0BGhI0Lf55Xhe3LMzA/zecPyGv/nuP/qvxK6bVheG/rvP/U4vllrfTLnec7oiNARoSPu3kVc0ZErh97qO3XH0FsFOsuOoS9J6IjQEaEjnkff5zbpe+LoiAgdETpyzMyHmXnpjW3n8Jd9deNy27CcsYl4Wmv9ac7zrnx0bPXdt+Pz6N0ezymufEVvReiI0BGhI0JHhL7P3bv3ZMfn0Zfk6IgIHRE6InRE6IjQkWM+3/y/d2PbU8CX++rnsJyxiTjWWg//g1xgzrNf6wVL5LJn9BlX85m2C71boLNsF/qqhI4IHRE6InRE6IjQEaEjQkeEjggdEfqOs+69CB35C5POmCO+HvwnAAAAAElFTkSuQmCC"
+
+/***/ }),
+
 /***/ "../../../../../src/styles.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -62,7 +69,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../material/prebuilt-themes/indigo-pink.css"), "");
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n.class-body {\n    background: url(" + __webpack_require__("../../../../../src/assets/images/grid.png") + ") repeat-x;\n    background-attachment: fixed;\n}", ""]);
 
 // exports
 
