@@ -119,7 +119,7 @@ export class SkillsandabilitiesComponent implements OnInit {
       knowledge: 'KNOWLEDGE  ABOUT DJANGO',
       color: 'primary',
       mode: 'buffer',
-      value: 5,
+      value: 30,
       bufferValue: 90
     },{
       name:'Django Rest Api',
@@ -143,6 +143,14 @@ export class SkillsandabilitiesComponent implements OnInit {
       color: 'primary',
       mode: 'buffer',
       value: 75,
+      bufferValue: 90
+    },
+    {
+      name:'VueJS',
+      knowledge: 'KNOWLEDGE ABOUT VUEJS',
+      color: 'primary',
+      mode: 'buffer',
+      value: 60,
       bufferValue: 90
     }
   ];

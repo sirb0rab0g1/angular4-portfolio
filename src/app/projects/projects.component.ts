@@ -117,7 +117,8 @@ export class ProjectsComponent implements OnInit {
           prime: 'FIrebase'
         }
       ]
-    },{
+    },
+    {
       projectTitle: 'Django Rest Tutorial',
       role: 'Back End Developer',
       link: 'https://my-rest-api-postgre.herokuapp.com',
@@ -126,7 +127,8 @@ export class ProjectsComponent implements OnInit {
           html: 'Django Rest Api'
         }
       ]
-    },{
+    },
+    {
       projectTitle: 'Rest Angular Tutorial',
       role: 'Front & Back End Developer',
       link: 'https://sirb0rab0g1.github.io/angularjs4-tutorial/#/',
@@ -141,6 +143,20 @@ export class ProjectsComponent implements OnInit {
         }
       ]
     },
+    {
+      projectTitle: 'Vue Rest',
+      role: 'Front & Back End Developer',
+      link: 'https://sirb0rab0g1.github.io/rest-vue/#/',
+      language: [
+        {
+          html: 'HTML',
+          css: 'CSS',
+          angular: 'Vue',
+          amaterial:'Vue Material',
+          django:'Django Rest'
+        }
+      ]
+    }
 
   ]
 
