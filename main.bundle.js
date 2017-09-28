@@ -590,7 +590,8 @@ var ProjectsComponent = (function () {
                         prime: 'FIrebase'
                     }
                 ]
-            }, {
+            },
+            {
                 projectTitle: 'Django Rest Tutorial',
                 role: 'Back End Developer',
                 link: 'https://my-rest-api-postgre.herokuapp.com',
@@ -599,7 +600,8 @@ var ProjectsComponent = (function () {
                         html: 'Django Rest Api'
                     }
                 ]
-            }, {
+            },
+            {
                 projectTitle: 'Rest Angular Tutorial',
                 role: 'Front & Back End Developer',
                 link: 'https://sirb0rab0g1.github.io/angularjs4-tutorial/#/',
@@ -614,6 +616,20 @@ var ProjectsComponent = (function () {
                     }
                 ]
             },
+            {
+                projectTitle: 'Vue Rest',
+                role: 'Front & Back End Developer',
+                link: 'https://sirb0rab0g1.github.io/rest-vue/#/',
+                language: [
+                    {
+                        html: 'HTML',
+                        css: 'CSS',
+                        angular: 'Vue',
+                        amaterial: 'Vue Material',
+                        django: 'Django Rest'
+                    }
+                ]
+            }
         ];
         this.myMasters = [
             {
@@ -834,7 +850,7 @@ var SkillsandabilitiesComponent = (function () {
                 knowledge: 'KNOWLEDGE  ABOUT DJANGO',
                 color: 'primary',
                 mode: 'buffer',
-                value: 5,
+                value: 30,
                 bufferValue: 90
             }, {
                 name: 'Django Rest Api',
@@ -858,6 +874,14 @@ var SkillsandabilitiesComponent = (function () {
                 color: 'primary',
                 mode: 'buffer',
                 value: 75,
+                bufferValue: 90
+            },
+            {
+                name: 'VueJS',
+                knowledge: 'KNOWLEDGE ABOUT VUEJS',
+                color: 'primary',
+                mode: 'buffer',
+                value: 60,
                 bufferValue: 90
             }
         ];
