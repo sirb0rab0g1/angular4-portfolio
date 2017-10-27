@@ -20,7 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { PushNotificationComponent } from 'ng2-notifications/ng2-notifications';
-
+import { ParticlesModule } from 'angular-particle';
 //angular-material
 import {
   MdButtonModule,
@@ -53,6 +53,7 @@ import {
     MdTabsModule,
     MdSliderModule,
     MdProgressBarModule,
+    ParticlesModule,
   ],
   providers: [
     
