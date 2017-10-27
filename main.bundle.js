@@ -155,7 +155,8 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_notifications_ng2_notifications__ = __webpack_require__("../../../../ng2-notifications/ng2-notifications.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_notifications_ng2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_ng2_notifications_ng2_notifications__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_angular_particle__ = __webpack_require__("../../../../angular-particle/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -176,6 +177,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 //directives
 
 //libraries
+
 
 
 
@@ -206,11 +208,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_10_ngx_bootstrap_dropdown__["a" /* BsDropdownModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_11__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_15__angular_material__["a" /* MdButtonModule */],
-            __WEBPACK_IMPORTED_MODULE_15__angular_material__["b" /* MdCardModule */],
-            __WEBPACK_IMPORTED_MODULE_15__angular_material__["c" /* MdTabsModule */],
-            __WEBPACK_IMPORTED_MODULE_15__angular_material__["d" /* MdSliderModule */],
-            __WEBPACK_IMPORTED_MODULE_15__angular_material__["e" /* MdProgressBarModule */],
+            __WEBPACK_IMPORTED_MODULE_16__angular_material__["a" /* MdButtonModule */],
+            __WEBPACK_IMPORTED_MODULE_16__angular_material__["b" /* MdCardModule */],
+            __WEBPACK_IMPORTED_MODULE_16__angular_material__["c" /* MdTabsModule */],
+            __WEBPACK_IMPORTED_MODULE_16__angular_material__["d" /* MdSliderModule */],
+            __WEBPACK_IMPORTED_MODULE_16__angular_material__["e" /* MdProgressBarModule */],
+            __WEBPACK_IMPORTED_MODULE_15_angular_particle__["a" /* ParticlesModule */],
         ],
         providers: [],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -242,7 +245,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/body/body.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n\n    <div class=\"col-lg-4 col-md-12\">\n      <app-profileimage></app-profileimage>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">code</i>&nbsp;&nbsp;\n          <span><strong>About </strong>Me</span>\n        </h6>\n        <div class=\"card-block\">\n          <app-aboutme></app-aboutme>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">build</i>&nbsp;\n          <span>My <strong>Specialties</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-myspecialties></app-myspecialties>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\" >\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">mouse</i>&nbsp;\n          <span><strong>Skills</strong> & <strong>Abilities</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-skillsandabilities></app-skillsandabilities>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"col-lg-8 col-md-12 \" >\n      <div style=\"margin-top:20px;\">\n        <ngb-tabset #t=\"ngbTabset\">\n          <ngb-tab id=\"tab-selectbyid1\">\n            <ng-template ngbTabTitle>\n              <span [ngClass]=\"materialSmallIcon\">\n                Projects &nbsp;&nbsp;\n              </span>\n              <span class=\"badge badge-default\">{{value}}</span>\n            </ng-template>\n            <ng-template ngbTabContent>\n              <app-projects></app-projects>\n            </ng-template>\n          </ngb-tab>\n        </ngb-tabset>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n\n    <div class=\"col-lg-4 col-md-12\">\n      <app-profileimage></app-profileimage>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">code</i>&nbsp;&nbsp;\n          <span><strong>About </strong>Me</span>\n        </h6>\n        <div class=\"card-block\">\n          <app-aboutme></app-aboutme>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">build</i>&nbsp;\n          <span>My <strong>Specialties</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-myspecialties></app-myspecialties>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\" >\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">mouse</i>&nbsp;\n          <span><strong>Skills</strong> & <strong>Abilities</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-skillsandabilities></app-skillsandabilities>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"col-lg-8 col-md-12 \" >\n      <div style=\"margin-top:20px;\">\n        <ngb-tabset #t=\"ngbTabset\">\n          <ngb-tab id=\"tab-selectbyid1\">\n            <ng-template ngbTabTitle>\n              <span [ngClass]=\"materialSmallIcon\">\n                Projects &nbsp;&nbsp;\n              </span>\n              <span class=\"badge badge-default\">{{value}}</span>\n            </ng-template>\n            <ng-template ngbTabContent>\n              <app-projects></app-projects>\n            </ng-template>\n          </ngb-tab>\n        </ngb-tabset>\n      </div>\n    </div>\n\n    <particles [params]=\"myParams\" [style]=\"myStyle\" [width]=\"width\" [height]=\"height\"></particles>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -270,8 +273,47 @@ var BodyComponent = (function () {
         //functions
         this.isCollapsed = false;
         this.value = '2';
+        this.myStyle = {};
+        this.myParams = {};
+        this.width = 100;
+        this.height = 100;
     }
     BodyComponent.prototype.ngOnInit = function () {
+        this.myStyle = {
+            'position': 'fixed',
+            'width': '100%',
+            'height': '100%',
+            'z-index': -1,
+            'top': 0,
+            'left': 0,
+            'right': 0,
+            'bottom': 0,
+        };
+        this.myParams = {
+            particles: {
+                number: {
+                    value: 120,
+                },
+                color: {
+                    value: '#ff0000'
+                },
+                shape: {
+                    type: 'circle',
+                    "stroke": {
+                        "width": 4,
+                        "color": "#fff"
+                    }, "circle": {
+                        "nb_sides": 6
+                    },
+                }, "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#b3b3b3",
+                    "opacity": 0.4,
+                    "width": 1
+                }
+            }
+        };
     };
     return BodyComponent;
 }());
