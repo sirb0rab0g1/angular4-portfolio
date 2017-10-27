@@ -41,7 +41,7 @@ export class BodyComponent implements OnInit {
           "enable": true,
           "distance": 150,
           "color": "#b3b3b3",
-          "opacity": 1,
+          "opacity": 3,
           "width": 1
         }
       }, 

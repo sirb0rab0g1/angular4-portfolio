@@ -173,9 +173,9 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: 'Python Django',
-      desc: 'He taught how python-django works and guide me into basics',
+      desc: 'This guy ROCKS! Guides me from bacis to advance, and inspires me a lot.',
       name: 'Rieljun Liguid ',
-      year: '2017',
+      year: '2017 - Current',
       btn: 'success',
       img:'https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/16665902_10208737043889603_5591910207594837889_o.jpg?oh=6b45a56c3c1c949ab6f90a9d89b73e18&oe=5A00EF60',
       fb:'lryuk92',
