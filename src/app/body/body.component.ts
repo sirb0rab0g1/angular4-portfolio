@@ -14,7 +14,7 @@ export class BodyComponent implements OnInit {
       'position': 'fixed',
       'width': '100%',
       'height': '100%',
-      'z-index': -1,
+      'z-index': 0,
       'top': 0,
       'left': 0,
       'right': 0,
@@ -24,7 +24,7 @@ export class BodyComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 120,
+          value: 100,
         },
         color: {
           value: '#ff0000'
@@ -41,10 +41,49 @@ export class BodyComponent implements OnInit {
           "enable": true,
           "distance": 150,
           "color": "#b3b3b3",
-          "opacity": 0.4,
+          "opacity": 1,
           "width": 1
         }
-      }
+      }, 
+      interactivity: {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
     };
   }
 
