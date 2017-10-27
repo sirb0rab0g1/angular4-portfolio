@@ -156,6 +156,20 @@ export class ProjectsComponent implements OnInit {
           django:'Django Rest'
         }
       ]
+    },
+    {
+      projectTitle: 'Chat Application (unfinished)',
+      role: 'Front & Back End Developer',
+      link: 'https://sirb0rab0g1.github.io/vuejs2-chatapp/#/',
+      language: [
+        {
+          html: 'HTML',
+          css: 'Stylus',
+          angular: 'Vuejs2',
+          amaterial:'Vuetify',
+          django:'Django Rest',
+        }
+      ]
     }
 
   ]
