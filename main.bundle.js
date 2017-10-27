@@ -245,7 +245,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/body/body.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n\n    <div class=\"col-lg-4 col-md-12\">\n      <app-profileimage></app-profileimage>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">code</i>&nbsp;&nbsp;\n          <span><strong>About </strong>Me</span>\n        </h6>\n        <div class=\"card-block\">\n          <app-aboutme></app-aboutme>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">build</i>&nbsp;\n          <span>My <strong>Specialties</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-myspecialties></app-myspecialties>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\" >\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">mouse</i>&nbsp;\n          <span><strong>Skills</strong> & <strong>Abilities</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-skillsandabilities></app-skillsandabilities>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"col-lg-8 col-md-12 \" >\n      <div style=\"margin-top:20px;\">\n        <ngb-tabset #t=\"ngbTabset\">\n          <ngb-tab id=\"tab-selectbyid1\">\n            <ng-template ngbTabTitle>\n              <span [ngClass]=\"materialSmallIcon\">\n                Projects &nbsp;&nbsp;\n              </span>\n              <span class=\"badge badge-default\">{{value}}</span>\n            </ng-template>\n            <ng-template ngbTabContent>\n              <app-projects></app-projects>\n            </ng-template>\n          </ngb-tab>\n        </ngb-tabset>\n      </div>\n    </div>\n\n    <particles [params]=\"myParams\" [style]=\"myStyle\" [width]=\"width\" [height]=\"height\"></particles>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <particles [params]=\"myParams\" [style]=\"myStyle\" [width]=\"width\" [height]=\"height\"></particles>\n\n    <div class=\"col-lg-4 col-md-12\">\n      <app-profileimage></app-profileimage>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">code</i>&nbsp;&nbsp;\n          <span><strong>About </strong>Me</span>\n        </h6>\n        <div class=\"card-block\">\n          <app-aboutme></app-aboutme>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\">\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">build</i>&nbsp;\n          <span>My <strong>Specialties</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-myspecialties></app-myspecialties>\n        </div>\n      </div>\n\n      <div class=\"card\" style=\"margin-top:20px;\" >\n        <h6 class=\"card-header\" [ngClass]=\"verticalAlign\">\n          <i class=\"material-icons\" [ngClass]=\"materialSmallIcon\">mouse</i>&nbsp;\n          <span><strong>Skills</strong> & <strong>Abilities</strong></span>\n        </h6>\n        <div class=\"card-block\">\n          <app-skillsandabilities></app-skillsandabilities>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"col-lg-8 col-md-12 \" >\n      <div style=\"margin-top:20px;\">\n        <ngb-tabset #t=\"ngbTabset\">\n          <ngb-tab id=\"tab-selectbyid1\">\n            <ng-template ngbTabTitle>\n              <span [ngClass]=\"materialSmallIcon\">\n                Projects &nbsp;&nbsp;\n              </span>\n              <span class=\"badge badge-default\">{{value}}</span>\n            </ng-template>\n            <ng-template ngbTabContent>\n              <app-projects></app-projects>\n            </ng-template>\n          </ngb-tab>\n        </ngb-tabset>\n      </div>\n    </div>\n\n\n\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -283,7 +283,7 @@ var BodyComponent = (function () {
             'position': 'fixed',
             'width': '100%',
             'height': '100%',
-            'z-index': -1,
+            'z-index': 0,
             'top': 0,
             'left': 0,
             'right': 0,
@@ -292,7 +292,7 @@ var BodyComponent = (function () {
         this.myParams = {
             particles: {
                 number: {
-                    value: 120,
+                    value: 100,
                 },
                 color: {
                     value: '#ff0000'
@@ -309,10 +309,49 @@ var BodyComponent = (function () {
                     "enable": true,
                     "distance": 150,
                     "color": "#b3b3b3",
-                    "opacity": 0.4,
+                    "opacity": 1,
                     "width": 1
                 }
-            }
+            },
+            interactivity: {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
         };
     };
     return BodyComponent;
