@@ -976,7 +976,7 @@ var SkillsandabilitiesComponent = (function () {
                 knowledge: 'KNOWLEDGE ABOUT VUEJS',
                 color: 'primary',
                 mode: 'buffer',
-                value: 60,
+                value: 87,
                 bufferValue: 90
             }
         ];
